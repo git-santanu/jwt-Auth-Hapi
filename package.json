@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@hapi/hapi": "^21.1.0",
+    "@hapi/inert": "^7.0.0",
+    "@hapi/jwt": "^3.0.0",
+    "@hapi/vision": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "hapi-swagger": "^15.0.0",
+    "joi": "^17.7.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "name": "jwt-auth-hapi",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santanu",
+  "license": "ISC",
+  "description": ""
+}
