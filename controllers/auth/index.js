@@ -37,7 +37,7 @@ exports.loginUser = async (req, res) => {
       }
     });
     if (!userExists) {
-      return success({ error: "Wrong email" })(res);
+      return invalidData({ error: "Wrong email" })(res);
     }
     let hashedPassword = userExists.password;
     let checkPassword = verifyPassword(rb.password, hashedPassword),
