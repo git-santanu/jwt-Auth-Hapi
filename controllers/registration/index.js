@@ -13,7 +13,7 @@ exports.registration = async(req,res)=>{
             },attributes:['id']
         })
         if(emailExists){
-            return success({error: 'Email does not exists'})(res)
+            return error({error: 'Email does not exists'})(res)
         }
         //check mobile
         let mobileExists= await user.findOne({
@@ -22,7 +22,7 @@ exports.registration = async(req,res)=>{
             },attributes: ['id']
         })
         if(mobileExists){
-            return success({error: 'Mobile number already exists'})(res)
+            return error({error: 'Mobile number already exists'})(res)
         }
         //hash password
         let password = await hashPassword(rb.password)

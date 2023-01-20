@@ -1,5 +1,5 @@
 const Jwt = require("@hapi/jwt");
-const { success, error } = require('../../response/macros');
+const { success, error, invalidData } = require('../../response/macros');
 const user = require('../../models').user;
 const { verifyPassword } = require('../helper');
 
